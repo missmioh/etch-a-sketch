@@ -1,4 +1,10 @@
 const container = document.querySelector("#container");
 
-document.createElement("div");
-container.appendChild(div);
+let i = 0;
+
+do {
+i++;
+const grid = document.createElement("div");
+container.appendChild(grid);
+// grid.textContent = `test`;
+} while (i <= 256 );
