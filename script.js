@@ -1,10 +1,10 @@
 const container = document.querySelector("#container");
 
-let i = 0;
+let i = 1;
 
 do {
-i++;
 const grid = document.createElement("div");
+grid.setAttribute("class", "squares");
 container.appendChild(grid);
-// grid.textContent = `test`;
-} while (i <= 256 );
+i++;
+} while (i <= 256);
