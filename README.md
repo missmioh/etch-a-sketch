@@ -5,3 +5,5 @@ This project is based on the assignment of the following section of The Odin Pro
 https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
 It will be a way to utilize existing DOM manipulation skills as well as exploring new JS methods through self-study. 
+
+Flexbox is ought to be used in favor of CSS Grid.
