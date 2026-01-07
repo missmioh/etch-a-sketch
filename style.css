@@ -4,17 +4,16 @@
     width: 960px;
 }
 
-.squares {
+.square {
    /* width: 5.1%;
     padding-top: 5.1%;
     background-color: red; 
-    also works but 
+    also works but clunky
     */
     aspect-ratio: 1 / 1; 
     width: 6.25%;
     border-color: red;
     border-style: solid;
     box-sizing: border-box;
-
 }
 

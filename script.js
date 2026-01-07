@@ -4,16 +4,16 @@ let i = 1;
 
 do {
 let grid = document.createElement("div");
-grid.setAttribute("class", "squares");
+grid.setAttribute("class", "square");
 container.appendChild(grid);
 i++;
 } while (i <= 256);
 
-let squared = document.querySelectorAll(".squares");
+let squares = document.querySelectorAll(".square");
 
-squared.forEach(squares => {
-    squares.addEventListener('mouseover', (e) => {
-        squares.style.backgroundColor = "green";    
+squares.forEach(square => {
+    square.addEventListener('mouseover', (e) => {
+        square.style.backgroundColor = "green";    
     });
 });
 
