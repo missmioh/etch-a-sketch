@@ -16,3 +16,13 @@ squared.forEach(squares => {
         squares.style.backgroundColor = "green";    
     });
 });
+
+const button = document.querySelector("button");
+
+button.addEventListener('click', () => {
+    let choice = prompt("Please enter desired grid size up to 100", "16");
+
+    if (choice != null) {
+        console.log(choice);
+    }
+});
