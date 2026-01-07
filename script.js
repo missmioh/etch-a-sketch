@@ -22,9 +22,11 @@ const button = document.querySelector("button");
 button.addEventListener('click', () => {
     let choice = prompt("Please enter desired grid size up to 100", "16");
 
-    if (choice != null) {
+    if (choice != null && choice <= 100) {
         console.log(choice);
         removeGrid();
+    } else if (choice > 100) {
+        console.log("Error, please choose a number smaller than 100");
     }
 });
 
