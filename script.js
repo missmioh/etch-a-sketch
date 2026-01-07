@@ -24,5 +24,12 @@ button.addEventListener('click', () => {
 
     if (choice != null) {
         console.log(choice);
+        removeGrid();
     }
 });
+
+function removeGrid() {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}; 
