@@ -25,6 +25,7 @@ button.addEventListener('click', () => {
     if (choice != null && choice <= 100) {
         console.log(choice);
         removeGrid();
+        sizeGrid(choice);
     } else if (choice > 100) {
         console.log("Error, please choose a number smaller than 100");
     }
@@ -35,3 +36,14 @@ function removeGrid() {
         container.removeChild(container.firstChild);
     }
 }; 
+
+function sizeGrid(num) { 
+    let i = 1;
+
+    do {
+    let grid = document.createElement("div");
+    grid.setAttribute("class", "square");
+    container.appendChild(grid);
+    i++;
+    } while (i <= (num * num));
+};
