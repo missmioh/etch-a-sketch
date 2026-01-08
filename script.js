@@ -17,14 +17,15 @@ i++;
 const button = document.querySelector("button");
 
 button.addEventListener('click', () => {
-    let choice = prompt("Please enter desired grid size up to 100", "16");
+    let choice = prompt("Please enter desired amount of squares up to 100", "16");
 
     if (choice != null && choice <= 100) {
         removeGrid();
         sizeGrid(choice);
-
     } else if (choice > 100) {
-        console.log("Error, please choose a number smaller than 100");
+        alert("Error, please choose a number smaller than 100");
+    } else {
+        alert("Please choose numbers only!");
     }
 });
 
