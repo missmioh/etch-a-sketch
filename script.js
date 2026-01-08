@@ -7,7 +7,7 @@ let grid = document.createElement("div");
 grid.setAttribute("class", "square");
 
 grid.addEventListener("mouseover", () => {
-    grid.style.backgroundColor = "green";
+    grid.style.backgroundColor = "black";
 });
 
 container.appendChild(grid);
@@ -43,7 +43,7 @@ function sizeGrid(num) {
     grid.style.width = `${100 / num}%`;
 
     grid.addEventListener("mouseover", () => {
-        grid.style.backgroundColor = "green";
+        grid.style.backgroundColor = "black";
     });
 
     container.appendChild(grid);

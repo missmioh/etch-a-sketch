@@ -2,18 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 960px;
+    justify-self: center;
 }
 
 .square {
-   /* width: 5.1%;
-    padding-top: 5.1%;
-    background-color: red; 
-    also works but clunky
-    */
     aspect-ratio: 1 / 1; 
     width: 6.25%;
-    border-color: red;
+    border-color: rgb(141, 141, 141);
     border-style: solid;
+    border-width: thin;
     box-sizing: border-box;
 }
 
+button {
+    display: block;
+    margin: 20px auto 20px auto;
+}
