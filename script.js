@@ -1,19 +1,5 @@
 const container = document.querySelector("#container");
 
-let i = 1;
-
-do {
-let grid = document.createElement("div");
-grid.setAttribute("class", "square");
-
-grid.addEventListener("mouseover", () => {
-    grid.style.backgroundColor = "black";
-});
-
-container.appendChild(grid);
-i++;
-} while (i <= 256);
-
 const button = document.querySelector("button");
 
 button.addEventListener('click', () => {
@@ -51,3 +37,5 @@ function sizeGrid(num) {
     i++;
     } while (i <= (num * num));
 };
+
+sizeGrid(16);
