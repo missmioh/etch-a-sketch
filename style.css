@@ -1,14 +1,13 @@
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
+    width: 500px;
     justify-self: center;
 }
 
 .square {
     aspect-ratio: 1 / 1; 
-    width: 6.25%;
-    border-color: rgb(141, 141, 141);
+    border-color: rgb(189, 189, 189);
     border-style: solid;
     border-width: thin;
     box-sizing: border-box;

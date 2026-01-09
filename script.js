@@ -32,10 +32,10 @@ function sizeGrid(num) {
     let state = 0.1;
 
     grid.addEventListener("mouseover", () => {
+        if (state > 1) return;
         grid.style.backgroundColor = "black";
         grid.style.opacity = state;
         state += 0.1;
-
     });
 
     container.appendChild(grid);
