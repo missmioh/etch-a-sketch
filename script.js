@@ -28,9 +28,14 @@ function sizeGrid(num) {
     let grid = document.createElement("div");
     grid.setAttribute("class", "square");
     grid.style.width = `${100 / num}%`;
+    
+    let state = 0.1;
 
     grid.addEventListener("mouseover", () => {
         grid.style.backgroundColor = "black";
+        grid.style.opacity = state;
+        state += 0.1;
+
     });
 
     container.appendChild(grid);
