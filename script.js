@@ -33,10 +33,11 @@ function sizeGrid(num) {
 
     grid.addEventListener("mouseover", () => {
         if (state > 1) return;
-        let getR = getRandomColor();
-        let getG = getRandomColor();
-        let getB = getRandomColor();
-        grid.style.backgroundColor = `rgb(${getR}, ${getG}, ${getB})`;
+        
+        if (state === 0.1) {
+            grid.style.backgroundColor = getRandomRGB();
+        }
+
         grid.style.opacity = state;
         state += 0.1;
     });
@@ -46,10 +47,16 @@ function sizeGrid(num) {
     } while (i <= (num * num));
 };
 
-function getRandomColor() {
-    const minCeiled = Math.ceil(0);
-    const maxFloored = Math.floor(255);
-    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+function getRandomValue() {
+    return Math.floor(Math.random() * 256);
+}
+
+function getRandomRGB() {
+    const r = getRandomValue();
+    const g = getRandomValue();
+    const b = getRandomValue();
+
+    return `rgb(${r}, ${g}, ${b})`;
 }
 
 sizeGrid(16);
