@@ -1,19 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+
+#container,
+button {
+    border-color: rgb(100, 50, 90, 0.3);
+    border-radius: 10px;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
     justify-self: center;
+    background-color: rgb(100, 50, 90, 0.05);
+}
+
+#container,
+.square {
+    border-style: solid;
+    box-sizing: border-box;
 }
 
 .square {
     aspect-ratio: 1 / 1; 
-    border-color: rgb(189, 189, 189);
-    border-style: solid;
+    border-color: rgb(232, 232, 232, 0.8);
     border-width: thin;
-    box-sizing: border-box;
 }
 
 button {
     display: block;
-    margin: 20px auto 20px auto;
+    margin: 20px auto 5px auto;
+    padding: 10px;
+    background-color: rgb(100, 50, 90, 0.3);
+    font-family: 'Impact', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(59, 42, 52, 0.9);
+    text-shadow: 0px 2px 0 #FFF;
+}
+
+button:hover {
+    background-color: rgb(100, 50, 90, 0.8);
+}
+
+h1 {
+    font-family: 'Yuji Boku', serif;
+    color: rgb(59, 42, 52);
+    text-align: center;
+    margin: 5px;
 }
