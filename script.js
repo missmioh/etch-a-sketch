@@ -3,7 +3,7 @@ const container = document.querySelector("#container");
 const button = document.querySelector("button");
 
 button.addEventListener('click', () => {
-    let choice = prompt("Please enter desired amount of squares up to 100", "16");
+    let choice = Number(prompt("Please enter desired amount of squares up to 100", "16"));
 
     if (choice != null && choice <= 100) {
         removeGrid();
@@ -19,6 +19,8 @@ function removeGrid() {
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
+    // container.innerHTML = "";
+    // would also work just fine here
 }; 
 
 function sizeGrid(num) { 
@@ -26,7 +28,7 @@ function sizeGrid(num) {
 
     do {
     let grid = document.createElement("div");
-    grid.setAttribute("class", "square");
+    grid.classList.add("square");
     grid.style.width = `${100 / num}%`;
     
     let state = 0.1;
